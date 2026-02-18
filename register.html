@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>InfoNest | Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="register-container">
+    <div class="card">
+        <h2>InfoNest</h2>
+        <p class="card-subtitle">Create your student account</p>
+
+        <form action="php/register.php" method="POST" id="registrationForm">
+            <div class="input-group">
+                <input type="text" name="fullname" id="fullname" required>
+                <label for="fullname">Full Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" id="password" required>
+                <label for="password">Password</label>
+                <span id="togglePassword" class="toggle-eye">👁</span>
+            </div>
+
+            <button type="submit" id="registerBtn">Create Account</button>
+        </form>
+
+        <p class="switch-text">
+            Already have an account? <a href="index.html">Login</a>
+        </p>
+    </div>
+</div>
+
+<script src="register.js"></script>
+</body>
+</html>

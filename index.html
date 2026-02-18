@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>InfoNest | Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="card">
+        <h2>InfoNest</h2>
+        <p class="login-subtitle">Welcome Back! Log in to your account</p>
+
+        <form action="php/login.php" method="POST" id="loginForm">
+            <div class="input-group">
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" id="password" required>
+                <label for="password">Password</label>
+                <span id="togglePassword" class="toggle-eye">👁</span>
+            </div>
+
+            <button type="submit" id="submitBtn">Login</button>
+        </form>
+
+        <p class="switch-text">
+            Don't have an account? <a href="register.html">Create one</a>
+        </p>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

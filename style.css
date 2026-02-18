@@ -1,0 +1,148 @@
+/* ===== MODERN AUTH DESIGN ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Dark blue gradient background */
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+}
+
+/* Containers */
+.login-container,
+.register-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+/* White Card (Improved) */
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 45px 35px;
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.25),
+        0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Title */
+.card h2 {
+    margin-bottom: 8px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Subtitle */
+.card-subtitle {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 45px 15px 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    background: #f1f5f9;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
+}
+
+/* Floating label */
+.input-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.2s ease;
+    background: transparent;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 12px;
+    font-size: 12px;
+    color: #2563eb;
+    background: #ffffff;
+    padding: 0 6px;
+}
+
+/* Eye toggle */
+.toggle-eye {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Buttons */
+#submitBtn,
+#registerBtn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitBtn:hover,
+#registerBtn:hover {    
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Switch text */
+.switch-text {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.switch-text a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
